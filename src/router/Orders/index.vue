@@ -1,5 +1,5 @@
 <template>
-  <div class="personal">
+  <div class="Orders">
     <Contain>
       <div>
         
@@ -13,7 +13,7 @@
 import Contain from '@/components/Contain/index'
 
 export default {
-  'name': 'personal',
+  'name': 'Orders',
   'components': { Contain }
 }
 

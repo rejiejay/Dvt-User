@@ -4,7 +4,9 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import store from './store/index';
 import router from './router';
+import Index from './index.vue';
 
 // Vue.config.productionTip = false
 
@@ -16,7 +18,9 @@ document.getElementById('loading').innerHTML = '';
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
+  'el': '#app',
+  'store': store,
+  'components': { Index },
+  'template': '<Index/>',
   router,
-  template: '<router-view/>'
 });
